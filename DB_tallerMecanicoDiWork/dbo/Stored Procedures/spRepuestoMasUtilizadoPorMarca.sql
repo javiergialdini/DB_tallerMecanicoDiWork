@@ -26,7 +26,7 @@ BEGIN
 				INNER JOIN Desperfecto d ON d.Id = dr.idDesperfecto
 				INNER JOIN Presupuesto p ON d.idPresupuesto = p.Id
 				INNER JOIN Vehiculo v ON p.idVehiculo = v.Id
-				WHERE v.Marca = 'Suzuki' -- Filtrar por la marca específica
+				WHERE v.Marca = @Marca -- Filtrar por la marca específica
 				GROUP BY v.Marca, r.Id
 			) AS RankedRepuestos
 			WHERE RowNum = 1;
