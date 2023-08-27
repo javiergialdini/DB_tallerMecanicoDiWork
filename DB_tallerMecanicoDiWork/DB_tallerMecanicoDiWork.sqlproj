@@ -85,5 +85,8 @@
     <Build Include="dbo\User Defined Types\Repuestos.sql" />
     <Build Include="dbo\User Defined Types\listaIds.sql" />
     <Build Include="dbo\User Defined Types\Desperfectos.sql" />
+    <Build Include="dbo\Tables\Usuario.sql" />
+    <Build Include="dbo\Tables\HistorialRefreshToken.sql" />
+    <Build Include="dbo\Stored Procedures\spGuardarHistorialRefreshToken.sql" />
   </ItemGroup>
 </Project>
